@@ -1,0 +1,6 @@
+{
+  "name": "Spacepod@hive | Modern Capsule Hotel Singapore",
+  "description": "Experience futuristic comfort at Spacepod@hive, Singapore. Affordable premium space pods located at 624 Serangoon Rd, Singapore 218223.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
