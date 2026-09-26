@@ -31,7 +31,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenBooking })
         {/* Hero Background Image with Scrim Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hero_spacepod_hive_1790404464923.jpg"
+            src="/assets/images/hero_spacepod_hive_1790404464923.jpg"
             alt="Spacepod@hive modern capsule accommodation Singapore"
             className="w-full h-full object-cover object-center scale-105 filter brightness-75"
             referrerPolicy="no-referrer"
@@ -142,7 +142,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenBooking })
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-purple-800/40 shadow-2xl">
               <img
-                src="/src/assets/images/amenity_lounge_pantry_1790404526983.jpg"
+                src="/assets/images/amenity_lounge_pantry_1790404526983.jpg"
                 alt="Spacepod@hive modern communal lounge and co-working area"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

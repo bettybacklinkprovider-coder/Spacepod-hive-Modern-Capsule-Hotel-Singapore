@@ -69,7 +69,7 @@ export const AmenitiesPage: React.FC<AmenitiesPageProps> = ({ onOpenBooking, onN
 
         <div className="rounded-2xl overflow-hidden border border-purple-800/40 shadow-2xl aspect-[4/3]">
           <img
-            src="/src/assets/images/amenity_lounge_pantry_1790404526983.jpg"
+            src="/assets/images/amenity_lounge_pantry_1790404526983.jpg"
             alt="Spacepod@hive modern communal lounge"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -81,7 +81,7 @@ export const AmenitiesPage: React.FC<AmenitiesPageProps> = ({ onOpenBooking, onN
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-slate-900 border border-purple-900/40 p-8 sm:p-12 rounded-3xl">
         <div className="order-2 lg:order-1 rounded-2xl overflow-hidden border border-purple-800/40 shadow-2xl aspect-[4/3]">
           <img
-            src="/src/assets/images/amenity_shower_bathroom_1790405197262.jpg"
+            src="/assets/images/amenity_shower_bathroom_1790405197262.jpg"
             alt="Spacepod@hive pristine rain shower facilities"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

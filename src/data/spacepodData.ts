@@ -21,7 +21,7 @@ export const ROOMS: RoomType[] = [
     priceSGD: 45,
     capacity: 1,
     size: '1.2m x 2.1m',
-    image: '/src/assets/images/room_single_pod_1790404484031.jpg',
+    image: '/assets/images/room_single_pod_1790404484031.jpg',
     popularTag: 'Most Popular',
     features: [
       'Single Memory Foam Mattress',
@@ -40,7 +40,7 @@ export const ROOMS: RoomType[] = [
     priceSGD: 75,
     capacity: 2,
     size: '1.6m x 2.1m',
-    image: '/src/assets/images/room_double_pod_1790404500503.jpg',
+    image: '/assets/images/room_double_pod_1790404500503.jpg',
     popularTag: 'Best for Couples',
     features: [
       'Queen-Size Memory Foam Mattress',
@@ -59,7 +59,7 @@ export const ROOMS: RoomType[] = [
     priceSGD: 49,
     capacity: 1,
     size: '1.2m x 2.1m',
-    image: '/src/assets/images/room_female_section_1790404514052.jpg',
+    image: '/assets/images/room_female_section_1790404514052.jpg',
     popularTag: 'Female Only',
     features: [
       'Female-Only Dedicated Security Floor',
@@ -78,7 +78,7 @@ export const ROOMS: RoomType[] = [
     priceSGD: 52,
     capacity: 1,
     size: '1.2m x 2.1m',
-    image: '/src/assets/images/hero_spacepod_hive_1790404464923.jpg',
+    image: '/assets/images/hero_spacepod_hive_1790404464923.jpg',
     features: [
       'High-Density Acoustic Insulation',
       'Dimmable Sunset Mood Lights',
@@ -155,25 +155,25 @@ export const WHY_STAY_POINTS = [
     title: 'Prime Serangoon Location',
     description: 'Located at 624 Serangoon Rd, just 5 minutes walk to Farrer Park MRT station, 24-hour Mustafa Centre, and vibrant Little India cultural district.',
     icon: 'MapPin',
-    image: '/src/assets/images/why_stay_location_1790405133737.jpg',
+    image: '/assets/images/why_stay_location_1790405133737.jpg',
   },
   {
     title: 'Modern Japanese Pod Design',
     description: 'Experience futuristic pod architecture offering 100% privacy, personal ambient lights, touch controls, and ergonomic comfort.',
     icon: 'Sparkles',
-    image: '/src/assets/images/why_stay_design_1790405151400.jpg',
+    image: '/assets/images/why_stay_design_1790405151400.jpg',
   },
   {
     title: 'Immaculate Hygiene Standards',
     description: 'Cleanliness is our top priority. Bathrooms, pods, and common areas are sanitized multiple times daily by dedicated staff.',
     icon: 'Sparkle',
-    image: '/src/assets/images/why_stay_hygiene_1790405167845.jpg',
+    image: '/assets/images/why_stay_hygiene_1790405167845.jpg',
   },
   {
     title: 'Affordable Singapore Stay',
     description: 'Enjoy high-end hotel amenities like memory foam beds, rain showers, and fast Wi-Fi at a fraction of standard hotel rates.',
     icon: 'BadgePercent',
-    image: '/src/assets/images/why_stay_affordable_1790405182593.jpg',
+    image: '/assets/images/why_stay_affordable_1790405182593.jpg',
   },
 ];
 
