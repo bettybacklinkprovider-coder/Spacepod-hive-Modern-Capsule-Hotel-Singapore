@@ -5,9 +5,12 @@ import {
   MapPin,
   Sparkles,
   Wifi,
+  Wind,
   ShieldCheck,
   Coffee,
   ShowerHead,
+  Shirt,
+  Luggage,
   ArrowRight,
   CheckCircle2,
   Clock,
@@ -260,17 +263,42 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenBooking })
             {AMENITIES.slice(0, 8).map((amenity) => (
               <div
                 key={amenity.id}
-                className="bg-slate-900/60 border border-purple-900/30 p-6 rounded-2xl hover:border-purple-600/50 transition-all space-y-3"
+                className="bg-slate-900 border border-purple-900/40 rounded-2xl overflow-hidden hover:border-purple-600/60 transition-all duration-300 flex flex-col group shadow-xl"
               >
-                <div className="w-10 h-10 rounded-xl bg-purple-950 border border-purple-800/50 flex items-center justify-center text-purple-400">
-                  <Zap className="w-5 h-5" />
+                {amenity.image && (
+                  <div className="relative aspect-[4/3] overflow-hidden bg-slate-950">
+                    <img
+                      src={amenity.image}
+                      alt={amenity.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
+                    <div className="absolute top-3 left-3 w-9 h-9 rounded-xl bg-purple-950/90 border border-purple-500/50 flex items-center justify-center shadow-lg backdrop-blur-md">
+                      {amenity.icon === 'Wifi' && <Wifi className="w-4 h-4 text-purple-300" />}
+                      {amenity.icon === 'Wind' && <Wind className="w-4 h-4 text-purple-300" />}
+                      {amenity.icon === 'ShowerHead' && <ShowerHead className="w-4 h-4 text-purple-300" />}
+                      {amenity.icon === 'Coffee' && <Coffee className="w-4 h-4 text-purple-300" />}
+                      {amenity.icon === 'ShieldCheck' && <ShieldCheck className="w-4 h-4 text-purple-300" />}
+                      {amenity.icon === 'Lock' && <Lock className="w-4 h-4 text-purple-300" />}
+                      {amenity.icon === 'Shirt' && <Shirt className="w-4 h-4 text-purple-300" />}
+                      {amenity.icon === 'Luggage' && <Luggage className="w-4 h-4 text-purple-300" />}
+                    </div>
+                  </div>
+                )}
+                <div className="p-5 space-y-2 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span className="text-[10px] font-mono font-bold text-purple-400 uppercase tracking-wider block mb-1">
+                      {amenity.category}
+                    </span>
+                    <h4 className="text-base font-bold font-heading text-white group-hover:text-purple-300 transition-colors">
+                      {amenity.title}
+                    </h4>
+                    <p className="text-xs text-slate-300 leading-relaxed mt-1.5">
+                      {amenity.description}
+                    </p>
+                  </div>
                 </div>
-                <h4 className="text-base font-bold font-heading text-white">
-                  {amenity.title}
-                </h4>
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  {amenity.description}
-                </p>
               </div>
             ))}
           </div>

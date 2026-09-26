@@ -18,6 +18,7 @@ export interface AmenityItem {
   description: string;
   category: 'Comfort' | 'Tech & Connectivity' | 'Facilities' | 'Services';
   icon: string;
+  image?: string;
 }
 
 export interface BookingDetails {

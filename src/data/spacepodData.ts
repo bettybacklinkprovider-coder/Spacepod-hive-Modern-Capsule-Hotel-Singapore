@@ -98,6 +98,7 @@ export const AMENITIES: AmenityItem[] = [
     description: 'High-speed fiber optic Wi-Fi throughout the entire property, perfect for streaming and remote work.',
     category: 'Tech & Connectivity',
     icon: 'Wifi',
+    image: '/assets/images/amenity_wifi_fast_1790411889728.jpg',
   },
   {
     id: 'climate',
@@ -105,6 +106,7 @@ export const AMENITIES: AmenityItem[] = [
     description: 'Fresh air circulation and personalized temperature controls in every single pod.',
     category: 'Comfort',
     icon: 'Wind',
+    image: '/assets/images/amenity_climate_control_1790411907718.jpg',
   },
   {
     id: 'bathrooms',
@@ -112,6 +114,7 @@ export const AMENITIES: AmenityItem[] = [
     description: 'Multiple daily cleanings ensure immaculate shared bathrooms with hot rain showers, body wash & shampoo.',
     category: 'Facilities',
     icon: 'ShowerHead',
+    image: '/assets/images/amenity_rain_shower_1790411919399.jpg',
   },
   {
     id: 'lounge',
@@ -119,6 +122,7 @@ export const AMENITIES: AmenityItem[] = [
     description: 'Relaxed ambient lounge with power plugs, high seats, free tea/coffee, and comfortable lounge chairs.',
     category: 'Facilities',
     icon: 'Coffee',
+    image: '/assets/images/amenity_coworking_lounge_1790411933566.jpg',
   },
   {
     id: 'security',
@@ -126,6 +130,7 @@ export const AMENITIES: AmenityItem[] = [
     description: 'CCTV surveillance in all common areas and encrypted RFID keycard access for main doors, dorms, and pods.',
     category: 'Services',
     icon: 'ShieldCheck',
+    image: '/assets/images/amenity_security_keycard_1790411949965.jpg',
   },
   {
     id: 'lockers',
@@ -133,6 +138,7 @@ export const AMENITIES: AmenityItem[] = [
     description: 'Secure personal luggage locker for every guest with keycard or passcode access.',
     category: 'Facilities',
     icon: 'Lock',
+    image: '/assets/images/amenity_digital_lockers_1790411963173.jpg',
   },
   {
     id: 'laundry',
@@ -140,6 +146,7 @@ export const AMENITIES: AmenityItem[] = [
     description: 'On-site washer and dryer available 24/7 with detergent provided for extended stay travelers.',
     category: 'Services',
     icon: 'Shirt',
+    image: '/assets/images/amenity_laundry_room_1790411981570.jpg',
   },
   {
     id: 'luggage',
@@ -147,6 +154,7 @@ export const AMENITIES: AmenityItem[] = [
     description: 'Arrived early or taking an evening flight? Store your luggage securely at no additional charge.',
     category: 'Services',
     icon: 'Luggage',
+    image: '/assets/images/amenity_luggage_storage_1790411999560.jpg',
   },
 ];
 

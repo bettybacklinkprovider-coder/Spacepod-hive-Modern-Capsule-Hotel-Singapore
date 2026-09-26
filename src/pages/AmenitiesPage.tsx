@@ -131,28 +131,49 @@ export const AmenitiesPage: React.FC<AmenitiesPageProps> = ({ onOpenBooking, onN
           {AMENITIES.map((amenity) => (
             <div
               key={amenity.id}
-              className="bg-slate-900 border border-purple-900/30 p-6 rounded-2xl hover:border-purple-600/50 transition-all flex flex-col justify-between space-y-4"
+              className="bg-slate-900 border border-purple-900/30 rounded-2xl overflow-hidden hover:border-purple-600/50 transition-all flex flex-col justify-between group shadow-xl"
             >
-              <div className="space-y-3">
-                <div className="w-12 h-12 rounded-2xl bg-purple-950 border border-purple-700/50 flex items-center justify-center text-purple-400">
-                  <Sparkles className="w-6 h-6" />
+              {amenity.image && (
+                <div className="relative aspect-[4/3] overflow-hidden bg-slate-950">
+                  <img
+                    src={amenity.image}
+                    alt={amenity.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
+                  <div className="absolute top-3 left-3 w-9 h-9 rounded-xl bg-purple-950/90 border border-purple-500/50 flex items-center justify-center text-purple-300 shadow-lg backdrop-blur-md">
+                    {amenity.icon === 'Wifi' && <Wifi className="w-4 h-4" />}
+                    {amenity.icon === 'Wind' && <Wind className="w-4 h-4" />}
+                    {amenity.icon === 'ShowerHead' && <ShowerHead className="w-4 h-4" />}
+                    {amenity.icon === 'Coffee' && <Coffee className="w-4 h-4" />}
+                    {amenity.icon === 'ShieldCheck' && <ShieldCheck className="w-4 h-4" />}
+                    {amenity.icon === 'Lock' && <Lock className="w-4 h-4" />}
+                    {amenity.icon === 'Shirt' && <Shirt className="w-4 h-4" />}
+                    {amenity.icon === 'Luggage' && <Luggage className="w-4 h-4" />}
+                  </div>
+                </div>
+              )}
+
+              <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <div className="text-[11px] font-mono text-purple-400 font-bold uppercase tracking-wider">
+                    {amenity.category}
+                  </div>
+
+                  <h3 className="text-lg font-bold font-heading text-white group-hover:text-purple-300 transition-colors">
+                    {amenity.title}
+                  </h3>
+
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    {amenity.description}
+                  </p>
                 </div>
 
-                <div className="text-[11px] font-mono text-purple-400 font-bold uppercase tracking-wider">
-                  {amenity.category}
+                <div className="pt-3 text-[11px] text-purple-300/80 font-medium border-t border-purple-900/30 flex items-center gap-1.5">
+                  <Check className="w-3.5 h-3.5 text-purple-400" />
+                  <span>Standard for all guests</span>
                 </div>
-
-                <h3 className="text-lg font-bold font-heading text-white">
-                  {amenity.title}
-                </h3>
-
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  {amenity.description}
-                </p>
-              </div>
-
-              <div className="pt-2 text-[11px] text-purple-300/80 font-medium border-t border-purple-900/20">
-                ✓ Standard for all guests
               </div>
             </div>
           ))}
